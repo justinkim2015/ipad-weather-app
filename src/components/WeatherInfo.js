@@ -2,6 +2,7 @@ import '../styles/weather.css'
 import {Link} from 'react-router-dom'
 import { useEffect, useState } from "react"
 import LoadingSpinner from "./Spinner";
+import "../styles/home.css"
 
 const WeatherInfo = () => {
   const [temp, setTemp] = useState()
@@ -23,13 +24,11 @@ const WeatherInfo = () => {
   })
 
   return (
-    <div id='weather'>
       <div id="info">
         <div>{temp}C</div>
         <div>{weather}</div>
         <Link to='/'>Back</Link>
       </div>
-    </div>
   );
 }
 
