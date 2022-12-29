@@ -1,0 +1,11 @@
+html {
+  background-color: rgb(235, 235, 235);
+}
+
+#root {
+  height: 95vh;
+}
+
+link {
+  text-decoration: none;
+}
