@@ -7,7 +7,7 @@ const WeatherInfo = ({temp, weather}) => {
       <div id="info">
         <div>{temp}C</div>
         <div>{weather}</div>
-        <Link to='/'>Back</Link>
+        <Link to='/main'>Back</Link>
       </div>
   );
 }

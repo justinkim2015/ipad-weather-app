@@ -1,0 +1,14 @@
+#main {
+  margin: 1rem;
+  height: 40rem;
+  width: 35rem;
+}
+
+.logo {
+  max-width: 4rem;
+  opacity: 92%;
+}
+
+.logo:hover {
+  opacity: 100%;
+}
