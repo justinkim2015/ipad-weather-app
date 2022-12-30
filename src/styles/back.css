@@ -1,0 +1,8 @@
+#back {
+  opacity: 70%;
+  max-height: 1.5rem;
+}
+
+#back:hover {
+  opacity: 100%;
+}

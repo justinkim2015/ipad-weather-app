@@ -9,6 +9,8 @@ const RouteSwitch = () => {
   const [temp, setTemp] = useState()
   const [weather, setWeather] = useState()
   const [icon, setIcon] = useState()
+  const [city, setCity] = useState()
+
   useEffect(() => {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=Tokyo&APPID=ba0a236e64fc4c191419fe3b161e3947&units=metric', {mode: 'cors'})
       .then(function(response) {
@@ -18,6 +20,7 @@ const RouteSwitch = () => {
         setTemp(response.main.temp)
         setWeather(response.weather[0].description)
         setIcon(`https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`)
+        setCity(response.name) 
       })
       .catch((error) => {
         console.log(error)
@@ -29,7 +32,7 @@ const RouteSwitch = () => {
       <Routes>
         <Route path="/" element={<Home temp={temp} weather={weather} icon={icon} />} />
         <Route path="/main" element={<Main temp={temp} weather={weather} icon={icon} />} />
-        <Route path="/info" element={<WeatherInfo temp={temp} weather={weather} />} />
+        <Route path="/info" element={<WeatherInfo temp={temp} weather={weather} icon={icon} city={city} />} />
       </Routes>
     </BrowserRouter>
   );

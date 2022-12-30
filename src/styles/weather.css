@@ -1,13 +1,39 @@
-#weather {
-  display: flex;
+#weather-box {
+  height: 35rem;
+  width: 30rem;
+  background-color: rgba(168, 168, 168, 0.95);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+#weather-main {
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  display: flex;
+  height: 42.3rem;
+  width: 38rem;
 }
 
 #info {
-  background-color: rgb(214, 214, 214);
-  padding: 10rem;
-  box-shadow: 2px 2px 10px grey;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.city {
+  font-size: 50px;
+}
+
+.current-temp {
+  font-size: 30px;
+}
+
+.icon {
+  min-height: 6rem;
+}
+
+.desc {
+  font-size: 25px;
 }
