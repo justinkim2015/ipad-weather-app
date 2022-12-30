@@ -6,12 +6,3 @@
   width: 35rem;
 }
 
-.logo {
-  margin-top: 1rem;
-  max-width: 4rem;
-  opacity: 92%;
-}
-
-.logo:hover {
-  opacity: 100%;
-}

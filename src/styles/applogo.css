@@ -1,0 +1,22 @@
+.logo {
+  margin-top: 1rem;
+  max-width: 4rem;
+  opacity: 92%;
+}
+
+.app-name {
+  margin-top: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.logo:hover {
+  opacity: 100%;
+}
+
+.logo-container {
+  max-width: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

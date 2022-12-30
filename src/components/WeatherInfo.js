@@ -69,7 +69,7 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
         <div id='info'>
           <h1 className='city'>{city}</h1>
           <div className='current-temp'>{temp}°C</div>
-          <img src={icon} className='icon'></img>
+          <img src={icon} className='icon' alt='weather icon'></img>
           {/* <div className='desc'>{info}</div> */}
           {/* {showForecast} */}
         </div>
