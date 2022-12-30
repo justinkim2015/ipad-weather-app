@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
+import Main from "./components/Main";
 import WeatherInfo from "./components/WeatherInfo";
 import './styles/app.css'
 import { useEffect, useState } from "react"
@@ -27,6 +28,7 @@ const RouteSwitch = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home temp={temp} weather={weather} icon={icon} />} />
+        <Route path="/main" element={<Main temp={temp} weather={weather} icon={icon} />} />
         <Route path="/info" element={<WeatherInfo temp={temp} weather={weather} />} />
       </Routes>
     </BrowserRouter>
