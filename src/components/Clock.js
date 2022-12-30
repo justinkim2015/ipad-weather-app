@@ -20,8 +20,8 @@ const Clock = () => {
 
   return( 
     <div id="clock-date">
-      <div id='clock'>{time}</div>
       <div id="date">{date}</div>
+      <div id='clock'>{time}</div>
     </div>
   )
 }

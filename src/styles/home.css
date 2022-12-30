@@ -7,22 +7,33 @@
   background-color: rgb(255, 255, 255);
   height: 45rem;
   width: 38rem;
+  background-image: url('../assets/hot-balloons.jpg');
+  background-size: cover;
 }
 
 .content {
+  height: 42rem;
   width: 38rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   overflow: auto;
 }
 
-#image:hover {
-  opacity: 80%;
+/* ---------UNLOCK------------------ */
+
+#unlock {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(17, 17, 17, 0.8);
+  padding: 1rem;
+  border-radius: 15px;
+  min-width: 30rem;
+  margin-bottom: 1rem;
 }
 
-#image {
-  max-height: 25rem;
-  max-width: 25rem;
+#unlock:hover {
+  background-color: rgba(17, 17, 17, 0.9);
 }

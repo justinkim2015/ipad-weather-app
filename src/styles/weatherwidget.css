@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'digital';
+  src: url(../fonts/digital-7.ttf);
+}
+
+#weather-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.7);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  min-width: 15rem;
+  min-height: 10rem;
+}
+
+.widget-weather {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+.widget-temp {
+  color: rgb(2, 170, 2, 0.8);
+  font-family: 'digital';
+  font-size: 60px;
+}
+
+#weather-widget:hover {
+  background-color: rgba(17, 17, 17, 0.8);
+}
+
