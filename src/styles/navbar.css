@@ -1,0 +1,25 @@
+#navbar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: -1.2rem;
+  width: 38rem;
+  padding: 0.8rem;
+  margin-left: -1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#upkeep {
+  margin-right: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#battery, #signal {
+  max-width: 1.5rem;
+}
+
+#time {
+  font: 20px;
+  color: rgba(255, 255, 255, 0.85);
+}

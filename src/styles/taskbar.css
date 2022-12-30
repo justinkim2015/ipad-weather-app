@@ -1,0 +1,19 @@
+#taskbar {
+  display: grid;
+  grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
+  justify-content: space-around;
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 20px;
+  height: 5.8rem;
+  margin: -1.8rem 2.5rem 2rem -0.5rem
+}
+
+.task-logo {
+  margin-top: 0.8rem;
+  max-width: 4rem;
+  opacity: 92%;
+}
+
+.task-logo:hover {
+  opacity: 100%;
+}

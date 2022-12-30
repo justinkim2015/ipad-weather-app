@@ -16,7 +16,7 @@ const Clock = () => {
   }
 
   const timer = setInterval(() => {tick()}, 1000)
-  const datestring = setInterval(() => {tick()}, 10000)
+  const datestring = setInterval(() => {updateDate()}, 10000)
 
   return( 
     <div id="clock-date">
