@@ -11,17 +11,17 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
   //        return response.json();
   //     })
   //     .then((response) => {
-  //       let array = []
-  //       for(let i=0; i < 7; i++) {
-  //         array.push({temp:response.list[i].main.temp, icon:`https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}@2x.png`})
-  //       }
-  //       setForecast(array)
+  //        console.log('----------')
+
+  //        setForecast({temp:response.list[0].main.temp})
+  //        console.log(forecast)
   //     })
   //     .catch((error) => {
   //       console.log(error)
   //     })  
   // })
   
+
   // const showForecast = () => {    
   //   return (
   //     <div>
@@ -41,8 +41,6 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
   }
 
   const info = () => {
-    console.log('hi')
-
     return (
       weatherInfo()
     )
@@ -70,8 +68,7 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
           <h1 className='city'>{city}</h1>
           <div className='current-temp'>{temp}°C</div>
           <img src={icon} className='icon' alt='weather icon'></img>
-          {/* <div className='desc'>{info}</div> */}
-          {/* {showForecast} */}
+          {/* <div>{forecast[0].temp}</div> */}
         </div>
       </div>
     </div>

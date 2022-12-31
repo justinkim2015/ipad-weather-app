@@ -4,6 +4,7 @@ import Message from '../assets/messages-icon.png'
 import Insta from '../assets/instagram-icon.png'
 import Github from '../assets/github-icon.png'
 import AppStore from '../assets/app-store-icon.png'
+import AppLogo from './AppLogo.js'
 
 const Taskbar = () => {
   return (
