@@ -47,8 +47,7 @@
 
 #contact-box {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
@@ -58,17 +57,3 @@
   box-shadow: 2px 3px 10px rgb(100, 100, 100);
 }
 
-#links {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.link {
-  text-decoration: none;
-  color: black;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
