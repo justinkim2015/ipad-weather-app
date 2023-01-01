@@ -4,7 +4,7 @@ import UpCase from './Upcase'
 import Forecast from './Forecast'
 import Spinner from './Spinner'
 
-const WeatherInfo = ({temp, weather, icon, city}) => {
+const WeatherInfo = ({temp, weather, icon, city, coords}) => {
   const isLoaded = () => {
     if(temp===undefined) {
       return Spinner()
@@ -29,7 +29,7 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
       <div id="weather-box">
         <Back />
         {isLoaded()}
-        <Forecast />
+        <Forecast coords={coords}/>
       </div>
     </div>
   );

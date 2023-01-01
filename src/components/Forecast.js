@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import Spinner from './Spinner'
 import '../styles/weather.css'
 
-const Forecast = () => {
+const Forecast = ({coords}) => {
   const [forecast, setForecast] = useState([])
 
   useEffect(() => {
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=Tokyo&appid=ba0a236e64fc4c191419fe3b161e3947&units=metric', {mode: 'cors'})
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${coords.lat}&lon=${coords.long}&appid=ba0a236e64fc4c191419fe3b161e3947&units=metric`, {mode: 'cors'})
       .then(function(response) {
          return response.json();
       })
