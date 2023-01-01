@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ipad-weather-app/static/css/main.c00a8acf.css",
+    "main.js": "/ipad-weather-app/static/js/main.074074f2.js",
+    "static/media/sky-clouds.jpg": "/ipad-weather-app/static/media/sky-clouds.03199a9f1432ea0b109a.jpg",
+    "static/media/hot-balloons.jpg": "/ipad-weather-app/static/media/hot-balloons.456dcbc6b35e11e03c00.jpg",
+    "static/media/office-background.jpg": "/ipad-weather-app/static/media/office-background.e3e245ad906b8a5c0b61.jpg",
+    "static/media/SF-Pro.ttf": "/ipad-weather-app/static/media/SF-Pro.1e1c0e29b79b49a6ff4d.ttf",
+    "static/media/instagram-icon.png": "/ipad-weather-app/static/media/instagram-icon.e719d8b29f452a16302d.png",
+    "static/media/digital-7.ttf": "/ipad-weather-app/static/media/digital-7.93911ab167c943140756.ttf",
+    "static/media/profile-picture.png": "/ipad-weather-app/static/media/profile-picture.6916892921d95ddf81a5.png",
+    "static/media/man.png": "/ipad-weather-app/static/media/man.68a7a3790a7c312208d6.png",
+    "static/media/about-icon.png": "/ipad-weather-app/static/media/about-icon.cf1c1b5d447c1d1836ee.png",
+    "static/media/messages-icon.png": "/ipad-weather-app/static/media/messages-icon.7831ce84edd424a551ab.png",
+    "static/media/app-store-icon.png": "/ipad-weather-app/static/media/app-store-icon.2be29c88bfd54927d5e2.png",
+    "static/media/line-icon.png": "/ipad-weather-app/static/media/line-icon.f66a7f2c4d030565349e.png",
+    "static/media/github-icon.png": "/ipad-weather-app/static/media/github-icon.05f6c17b8cd04c28456f.png",
+    "static/media/linkedin.png": "/ipad-weather-app/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/ios-signal.svg": "/ipad-weather-app/static/media/ios-signal.e969b572d7f048743ba68af5ce60b30c.svg",
+    "static/media/ios-battery.svg": "/ipad-weather-app/static/media/ios-battery.de7169c37cc36539b596f429bec3cfdd.svg",
+    "static/media/ios-weather.svg": "/ipad-weather-app/static/media/ios-weather.09c5e02ec40b9ac9e7cee96cb5b7ee71.svg",
+    "index.html": "/ipad-weather-app/index.html",
+    "main.c00a8acf.css.map": "/ipad-weather-app/static/css/main.c00a8acf.css.map",
+    "main.074074f2.js.map": "/ipad-weather-app/static/js/main.074074f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c00a8acf.css",
+    "static/js/main.074074f2.js"
+  ]
+}
