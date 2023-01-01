@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import '../styles/clock.css'
+import { useState } from "react"
+import './clock.css'
 
 const Clock = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString())

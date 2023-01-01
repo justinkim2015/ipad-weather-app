@@ -1,5 +1,5 @@
 import { useState } from "react"
-import '../styles/smallclock.css'
+import './smallclock.css'
 
 const SmallClock = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}))

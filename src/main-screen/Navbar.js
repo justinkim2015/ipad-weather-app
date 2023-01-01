@@ -1,4 +1,4 @@
-import '../styles/navbar.css'
+import './navbar.css'
 import Battery from '../assets/ios-battery.svg'
 import Signal from '../assets/ios-signal.svg'
 import SmallClock from './SmallClock'

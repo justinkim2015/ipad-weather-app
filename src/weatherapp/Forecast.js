@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import Spinner from './Spinner'
-import '../styles/weather.css'
+import Spinner from '../components/Spinner'
+import './weather.css'
 
 const Forecast = ({coords}) => {
   const [forecast, setForecast] = useState([])

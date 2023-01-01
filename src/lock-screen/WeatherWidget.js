@@ -1,6 +1,6 @@
-import "../styles/weatherwidget.css"
-import UpCase from './Upcase'
-import Spinner from './Spinner'
+import "./weatherwidget.css"
+import UpCase from '../components/Upcase'
+import Spinner from '../components/Spinner'
 
 const WeatherWidget = ({weather, temp, icon}) => {  
   const widget = () => {

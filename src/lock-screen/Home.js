@@ -1,4 +1,4 @@
-import "../styles/home.css"
+import "./home.css"
 import {Link} from 'react-router-dom'
 import Clock from "./Clock"
 import WeatherWidget from "./WeatherWidget"
