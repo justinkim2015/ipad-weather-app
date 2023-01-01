@@ -6,3 +6,7 @@
   width: 35rem;
 }
 
+#apps {
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem 7rem 7rem;
+}

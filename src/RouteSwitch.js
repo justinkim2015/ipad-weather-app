@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import WeatherInfo from "./components/WeatherInfo";
 import './styles/app.css'
 import { useEffect, useState } from "react"
+import AboutMe from './aboutme/About'
 
 const RouteSwitch = () => {
   const [temp, setTemp] = useState()
@@ -39,6 +40,7 @@ const RouteSwitch = () => {
         <Route path="/" element={<Home temp={temp} weather={weather} icon={icon} />} />
         <Route path="/main" element={<Main temp={temp} weather={weather} icon={icon} />} />
         <Route path="/info" element={<WeatherInfo temp={temp} weather={weather} icon={icon} city={city} coords={coords} />} />
+        <Route path="/about" element={<AboutMe />} />
       </Routes>
     </BrowserRouter>
   );
