@@ -1,33 +1,21 @@
 import "../styles/weatherwidget.css"
+import UpCase from './Upcase'
+import Spinner from './Spinner'
 
-const WeatherWidget = ({weather, temp, icon}) => {
-  const currentWeather = () => {
-    let uppercase = weather.charAt(0).toUpperCase() + weather.slice(1);
-  
-    return uppercase
-  }
-  
+const WeatherWidget = ({weather, temp, icon}) => {  
   const widget = () => {
     if(weather===undefined || temp===undefined) {
-      return loading()
+      return Spinner()
     } else {
       return weatherInfo()
     }
   }
-  
-  const loading = () => {
-    return (
-      <div id='weather-widget'>
-        <p>Loading...</p>
-      </div>
-    )
-  }
-  
+    
   const weatherInfo = () => {
     return(
       <div id="weather-widget">
         <img src={icon} alt='weather-logo'></img>
-        <div className='widget-weather'>{currentWeather()}</div>
+        <div className='widget-weather'>{UpCase(weather)}</div>
         <div className='widget-temp'>{temp}°C</div>
       </div>
     )

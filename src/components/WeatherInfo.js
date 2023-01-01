@@ -2,6 +2,7 @@ import '../styles/weather.css'
 import { useState, useEffect } from 'react'
 import Back from './Back'
 import UpCase from './Upcase'
+import Spinner from './Spinner'
 
 const WeatherInfo = ({temp, weather, icon, city}) => {
   const [forecast, setForecast] = useState([])
@@ -14,10 +15,10 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
       .then((response) => {
         let ForecastArray = []
         setForecast(response.list)
-        for(let i=0; i < 7; i++) {
+        for(let i=1; i < 9; i++) {
           let hash = {temp:response.list[i].main.temp, 
                       icon:`https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}@2x.png`,
-                      date:response.list[i].dt_txt}
+                      date:`${i * 3} Hrs`}
           ForecastArray.push(hash)
         }
 
@@ -31,21 +32,21 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
   const showForecast = () => {    
     return ( forecast.map((day, index) => (
       <div className='date-icon' key={index}>
-        <div className='small-date'>{day.date.substring(5,10)}</div>
+        <div className='small-date'>{day.date}</div>
         <img src={day.icon} className='small-icon'></img>
-        <div className='small-temp'>{day.temp}</div>
+        <div className='small-temp'>{day.temp}°</div>
       </div>
     )))
   }
 
-  const weatherInfo = () => {
+  // const weatherInfo = () => {
 
-    if(forecast.icon===undefined || forecast.temp===undefined || forecast.date===undefined) {
-      return loading()
-    } else {
-      return showForecast()
-    }
-  }
+  //   if(forecast===undefined || temp==undefined) {
+  //     return Spinner()
+  //   } else {
+  //     return showForecast()
+  //   }
+  // }
   
   const loading = () => {
     return (
