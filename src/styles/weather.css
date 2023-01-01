@@ -1,4 +1,6 @@
 #weather-box {
+  display: grid;
+  grid-template-rows: 2rem 23rem 10rem;
   height: 35rem;
   width: 30rem;
   background-color: rgba(168, 168, 168, 0.95);
@@ -25,7 +27,7 @@
 }
 
 .city {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .current-temp {
@@ -33,9 +35,32 @@
 }
 
 .icon {
-  min-height: 6rem;
+  min-height: 5rem;
 }
 
 .desc {
   font-size: 25px;
+}
+
+.date-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.date-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-date, .small-icon, .small-temp {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  max-height: 3.5rem;
 }

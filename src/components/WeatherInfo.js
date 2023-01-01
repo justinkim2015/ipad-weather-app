@@ -1,49 +1,50 @@
 import '../styles/weather.css'
 import { useState, useEffect } from 'react'
 import Back from './Back'
+import UpCase from './Upcase'
 
 const WeatherInfo = ({temp, weather, icon, city}) => {
-  const [forecast, setForecast] = useState()
+  const [forecast, setForecast] = useState([])
 
-  // useEffect(() => {
-  //   fetch('https://api.openweathermap.org/data/2.5/forecast?q=Tokyo&appid=ba0a236e64fc4c191419fe3b161e3947&units=metric', {mode: 'cors'})
-  //     .then(function(response) {
-  //        return response.json();
-  //     })
-  //     .then((response) => {
-  //        console.log('----------')
+  useEffect(() => {
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=Tokyo&appid=ba0a236e64fc4c191419fe3b161e3947&units=metric', {mode: 'cors'})
+      .then(function(response) {
+         return response.json();
+      })
+      .then((response) => {
+        let ForecastArray = []
+        setForecast(response.list)
+        for(let i=0; i < 7; i++) {
+          let hash = {temp:response.list[i].main.temp, 
+                      icon:`https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}@2x.png`,
+                      date:response.list[i].dt_txt}
+          ForecastArray.push(hash)
+        }
 
-  //        setForecast({temp:response.list[0].main.temp})
-  //        console.log(forecast)
-  //     })
-  //     .catch((error) => {
-  //       console.log(error)
-  //     })  
-  // })
-  
+        setForecast(ForecastArray)
+      })
+      .catch((error) => {
+        console.log(error)
+      })  
+  }, [])
 
-  // const showForecast = () => {    
-  //   return (
-  //     <div>
-  //       <div>{forecast.temp}</div>
-  //       <img src={forecast.icon}></img>
-  //     </div>
-  //   )
-  // }
+  const showForecast = () => {    
+    return ( forecast.map((day, index) => (
+      <div className='date-icon' key={index}>
+        <div className='small-date'>{day.date.substring(5,10)}</div>
+        <img src={day.icon} className='small-icon'></img>
+        <div className='small-temp'>{day.temp}</div>
+      </div>
+    )))
+  }
 
   const weatherInfo = () => {
 
-    if(weather===undefined || temp===undefined) {
+    if(forecast.icon===undefined || forecast.temp===undefined || forecast.date===undefined) {
       return loading()
     } else {
-      return currentWeather()
+      return showForecast()
     }
-  }
-
-  const info = () => {
-    return (
-      weatherInfo()
-    )
   }
   
   const loading = () => {
@@ -54,22 +55,17 @@ const WeatherInfo = ({temp, weather, icon, city}) => {
     )
   }
   
-  const currentWeather = () => {
-    let uppercase = weather.charAt(0).toUpperCase() + weather.slice(1);
-  
-    return uppercase
-  }
-  
   return (
     <div id="weather-main">
       <div id="weather-box">
         <Back />
         <div id='info'>
+          <div>{UpCase(weather)}</div>
           <h1 className='city'>{city}</h1>
-          <div className='current-temp'>{temp}°C</div>
           <img src={icon} className='icon' alt='weather icon'></img>
-          {/* <div>{forecast[0].temp}</div> */}
+          <div className='current-temp'>{temp}°C</div>
         </div>
+        <div className='date-bar'>{showForecast()}</div>
       </div>
     </div>
   );
