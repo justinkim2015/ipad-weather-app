@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./lock-screen/Home";
 import Main from "./main-screen/Main";
 import WeatherInfo from "./weatherapp/WeatherInfo";
@@ -35,14 +35,14 @@ const RouteSwitch = () => {
   }, [])
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home temp={temp} weather={weather} icon={icon} />} />
         <Route path="/main" element={<Main temp={temp} weather={weather} icon={icon} />} />
         <Route path="/info" element={<WeatherInfo temp={temp} weather={weather} icon={icon} city={city} coords={coords} />} />
         <Route path="/about" element={<AboutMe />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
