@@ -9,7 +9,7 @@ const App = () => {
           <div id="screen">
             < RouteSwitch />  
           </div>
-        <a href="/#">
+        <a href="/ipad-weather-app/#/">
           <div id='button'></div>
         </a>
       </div>
