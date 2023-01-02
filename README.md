@@ -11,6 +11,9 @@ I made this app as a capstone of a course to learn and practice ReactJS.  The bi
 By breaking things into components as much as possible I could really understand how using React can massively increase the speed and scalability of front-end development.  
 
 ## Images
+![Homepage](https://user-images.githubusercontent.com/38001874/210215577-0b29905b-f562-434b-8491-f09cc7ff545c.png)
+![AppPage](https://user-images.githubusercontent.com/38001874/210215585-96cc5d29-bf29-41e4-9c7a-f127b32046ae.png)
+![WeatherApp](https://user-images.githubusercontent.com/38001874/210215590-f70b8a0b-3d44-4ff3-a1b2-4e44863235ba.png)
 
 ## Technologies Used
 - ReactJS
