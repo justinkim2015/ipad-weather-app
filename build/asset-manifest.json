@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ipad-weather-app/static/css/main.c2ff7be8.css",
-    "main.js": "/ipad-weather-app/static/js/main.a08ee6da.js",
+    "main.js": "/ipad-weather-app/static/js/main.b6f88d20.js",
     "static/media/sky-clouds.jpg": "/ipad-weather-app/static/media/sky-clouds.03199a9f1432ea0b109a.jpg",
     "static/media/hot-balloons.jpg": "/ipad-weather-app/static/media/hot-balloons.456dcbc6b35e11e03c00.jpg",
     "static/media/office-background.jpg": "/ipad-weather-app/static/media/office-background.e3e245ad906b8a5c0b61.jpg",
@@ -19,10 +19,10 @@
     "static/media/ios-weather.svg": "/ipad-weather-app/static/media/ios-weather.09c5e02ec40b9ac9e7cee96cb5b7ee71.svg",
     "index.html": "/ipad-weather-app/index.html",
     "main.c2ff7be8.css.map": "/ipad-weather-app/static/css/main.c2ff7be8.css.map",
-    "main.a08ee6da.js.map": "/ipad-weather-app/static/js/main.a08ee6da.js.map"
+    "main.b6f88d20.js.map": "/ipad-weather-app/static/js/main.b6f88d20.js.map"
   },
   "entrypoints": [
     "static/css/main.c2ff7be8.css",
-    "static/js/main.a08ee6da.js"
+    "static/js/main.b6f88d20.js"
   ]
 }
