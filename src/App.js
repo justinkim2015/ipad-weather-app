@@ -9,7 +9,7 @@ const App = () => {
           <div id="screen">
             < RouteSwitch />  
           </div>
-        <a href="/">
+        <a href="/#">
           <div id='button'></div>
         </a>
       </div>
