@@ -1,9 +1,9 @@
-import "../styles/main.css"
+import "./main.css"
 import Weather from '../assets/ios-weather.svg'
 import AboutMe from '../aboutme/about-icon.png'
-import Navbar from './Navbar.js'
-import Taskbar from './Taskbar.js'
-import AppLogo from './AppLogo.js'
+import Navbar from '../components/Navbar.js'
+import Taskbar from '../components/Taskbar.js'
+import AppLogo from '../components/AppLogo.js'
 
 const Main = ({temp, weather, icon}) => {  
   return (

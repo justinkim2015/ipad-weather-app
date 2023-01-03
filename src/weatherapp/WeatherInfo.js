@@ -1,8 +1,8 @@
-import '../styles/weather.css'
-import Back from './Back'
-import UpCase from './Upcase'
-import Forecast from './Forecast'
-import Spinner from './Spinner'
+import './weather.css'
+import Back from '../components/Back'
+import UpCase from '../components/Upcase'
+import Forecast from '../components/Forecast'
+import Spinner from '../components/Spinner'
 
 const WeatherInfo = ({temp, weather, icon, city, coords}) => {
   const isLoaded = () => {

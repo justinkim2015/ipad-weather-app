@@ -9,7 +9,7 @@
 }
 
 #weather-main {
-  background-image: url(../assets/sky-clouds.jpg);
+  background-image: url(./sky-clouds.jpg);
   background-size: cover;
   border-radius: 15px;
   justify-content: center;

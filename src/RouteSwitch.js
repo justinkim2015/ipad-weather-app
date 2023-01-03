@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Main from "./components/Main";
-import WeatherInfo from "./components/WeatherInfo";
+import Home from "./lockscreen/Home";
+import Main from "./homescreen/Main";
+import WeatherInfo from "./weatherapp/WeatherInfo";
 import './styles/app.css'
 import { useEffect, useState } from "react"
 import AboutMe from './aboutme/About'
